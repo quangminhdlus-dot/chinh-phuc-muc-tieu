@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1"><meta name="theme-color" content="#214e3e">
+<meta name="description" content="Biến mục tiêu 12 tuần thành những bước nhỏ mỗi ngày.">
+<title>Chinh phục mục tiêu 12 tuần</title><link rel="stylesheet" href="styles.css"><script src="app.js" defer></script>
+</head>
+<body>
+<header class="topbar"><a class="brand" href="./index.html"><span class="brand-icon" aria-hidden="true">↗</span><span>mười hai<small>MỖI TUẦN, MỘT BƯỚC TIẾN</small></span></a><span class="local-badge">● &nbsp; Không gian của bạn</span></header>
+<main>
+<section class="intro"><div><p class="eyebrow">TẬP TRUNG HÔM NAY · TIẾN XA NGÀY MAI</p><h1>Chinh phục mục tiêu <em>12 tuần.</em></h1><p class="muted">Một mục tiêu rõ ràng. Những hành động nhỏ. Một phiên bản tốt hơn của bạn.</p></div><div class="intro-mark" aria-hidden="true">12<span>tuần để bứt phá</span></div></section>
+<div class="dashboard"><div class="main-column">
+<section class="card goal-card" aria-labelledby="goal-heading"><div class="section-header"><span class="eyebrow">01 / ĐÍCH ĐẾN CỦA BẠN</span><span class="small-tag">12 tuần, 1 mục tiêu</span></div>
+<form id="goal-form"><label id="goal-heading" for="goal">Bạn muốn đạt được điều gì?</label><textarea id="goal" rows="2" maxlength="500" placeholder="Ví dụ: Chạy liên tục 5 km sau 12 tuần…"></textarea><div class="goal-footer"><span class="hint">Hãy viết cụ thể và vừa sức với bạn.</span><button class="text-button" type="submit">Lưu mục tiêu ↗</button></div></form></section>
+<section class="card tasks-card" aria-labelledby="tasks-heading"><div class="section-header"><div><p class="eyebrow">02 / TỪNG BƯỚC NHỎ</p><h2 id="tasks-heading">Kế hoạch hành động <span id="task-count" class="count">0</span></h2></div><span class="spark" aria-hidden="true">✳</span></div>
+<form id="task-form" class="task-form"><label class="sr-only" for="task-input">Tên công việc mới</label><input id="task-input" maxlength="200" placeholder="Một việc nhỏ đưa bạn gần mục tiêu hơn…" required autocomplete="off"><div class="task-form-actions"><label class="sr-only" for="task-week">Tuần thực hiện</label><select id="task-week"></select><button class="primary" type="submit">＋ Thêm việc</button></div></form>
+<div class="list-toolbar"><div class="filters" role="group" aria-label="Lọc công việc"><button type="button" data-filter="all" aria-pressed="true">Tất cả</button><button type="button" data-filter="active" aria-pressed="false">Cần làm</button><button type="button" data-filter="done" aria-pressed="false">Đã xong</button></div><span id="list-summary" class="hint">0 công việc</span></div>
+<ul id="task-list" class="task-list"></ul><div id="empty-state" class="empty-state"><span class="empty-icon" aria-hidden="true">↗</span><h3>Bước đầu tiên bắt đầu từ đây</h3><p>Thêm một công việc nhỏ cho tuần đầu tiên.</p></div><p class="list-note">Đi chậm cũng được, miễn là bạn tiếp tục.</p></section></div>
+<aside class="side-column"><section class="progress-card" aria-labelledby="progress-heading"><div class="section-header"><p class="eyebrow">HÀNH TRÌNH CỦA BẠN</p><span aria-hidden="true">↗</span></div><h2 id="progress-heading">Mỗi bước đều có giá trị.</h2><div class="progress-number"><strong id="progress-percent">0</strong><span>%</span></div><p id="progress-caption">Sẵn sàng cho bước đầu tiên</p><div id="progress-bar" class="progress-track" role="progressbar" aria-label="Tiến độ hoàn thành công việc" aria-valuemin="0" aria-valuemax="100" aria-valuenow="0"><div id="progress-fill"></div></div><div class="progress-stats"><div><strong id="done-count">0</strong><span>Đã hoàn thành</span></div><div><strong id="remaining-count">0</strong><span>Đang chờ bạn</span></div></div></section>
+<section class="card weeks-card" aria-labelledby="weeks-heading"><p class="eyebrow">NHÌN VỀ PHÍA TRƯỚC</p><h2 id="weeks-heading">12 tuần của bạn</h2><div id="week-grid" class="week-grid"></div><p class="hint"><span class="legend-dot"></span> Tuần có công việc đã hoàn thành hết</p></section>
+<div class="quote"><span aria-hidden="true">“</span><p>Bạn không cần hoàn hảo.<br>Chỉ cần tốt hơn một chút<br>so với hôm qua.</p><small>MỘT CHÚT MỖI NGÀY</small></div></aside></div>
+<footer><span>Được tạo cho những mục tiêu có ý nghĩa.</span><span id="save-status" role="status" aria-live="polite">Dữ liệu chỉ lưu trên trình duyệt này</span></footer>
+</main><div id="toast" class="toast" role="status" aria-live="polite"></div>
+</body></html>
